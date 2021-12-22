@@ -1,0 +1,16 @@
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Proje-2\bin\Debug\Data-Structure-Proje-2.exe.config
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Proje-2\bin\Debug\Data-Structure-Proje-2.exe
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Proje-2\bin\Debug\Data-Structure-Proje-2.pdb
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Proje-2\obj\Debug\Data-Structure-Proje-2.csproj.AssemblyReference.cache
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Proje-2\obj\Debug\Data-Structure-Proje-2.csproj.SuggestedBindingRedirects.cache
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Proje-2\obj\Debug\Data-Structure-Proje-2.csproj.CoreCompileInputs.cache
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Proje-2\obj\Debug\Data-Structure-Proje-2.exe
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Proje-2\obj\Debug\Data-Structure-Proje-2.pdb
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Project-2\Data-Structure-Proje-2\bin\Debug\Data-Structure-Proje-2.exe.config
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Project-2\Data-Structure-Proje-2\bin\Debug\Data-Structure-Proje-2.exe
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Project-2\Data-Structure-Proje-2\bin\Debug\Data-Structure-Proje-2.pdb
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Project-2\Data-Structure-Proje-2\obj\Debug\Data-Structure-Proje-2.csproj.AssemblyReference.cache
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Project-2\Data-Structure-Proje-2\obj\Debug\Data-Structure-Proje-2.csproj.SuggestedBindingRedirects.cache
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Project-2\Data-Structure-Proje-2\obj\Debug\Data-Structure-Proje-2.csproj.CoreCompileInputs.cache
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Project-2\Data-Structure-Proje-2\obj\Debug\Data-Structure-Proje-2.exe
+D:\Projeler\C# Projeleri\Data-Structure-Proje-2\Data-Structure-Project-2\Data-Structure-Proje-2\obj\Debug\Data-Structure-Proje-2.pdb
