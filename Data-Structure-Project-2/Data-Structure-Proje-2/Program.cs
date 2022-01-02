@@ -21,9 +21,12 @@ namespace Data_Structure_Proje_2
         {
             ArrayList motoKuryeListesi = BilesikVeriYapisiOlusturma(); // Arraylisti olustur.
 
-            //Console.BackgroundColor = ConsoleColor.White;
-            //Console.Clear();
-            //Console.ForegroundColor = ConsoleColor.Black;
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Black;
+
+            // Bilesik veri yapisindaki elemanlari ekrana yazdir.
+            bilesikVeriYapisiniEkranaYazdir(motoKuryeListesi);
 
             // Motokurye listesindeki mahalle ve teslimat sayısını bul ve ekrana yaz.
             mahalleVeTeslimatSayisiniBulupEkranaYazdir(motoKuryeListesi);
@@ -42,7 +45,7 @@ namespace Data_Structure_Proje_2
         }
 
         /*
-         * Projenin 1. sorusunun b şıkkında istenen metot.
+         * Projenin 1. sorusunun a şıkkında istenen metot.
          */
         public static ArrayList BilesikVeriYapisiOlusturma()
         {
@@ -74,6 +77,27 @@ namespace Data_Structure_Proje_2
         }
 
         /*
+         * Dokumandaki 1. sorunun b şıkkındaki işlemi yapan metot.
+         */
+        public static void bilesikVeriYapisiniEkranaYazdir(ArrayList motoKuryeListesi)
+        {
+            // Arraylisttteki tum mahalleleri gez.
+            Console.WriteLine("\n-------------------------------1.b ARRAYLIST-------------------------------\n");
+            foreach (Mahalle mahalle in motoKuryeListesi)
+            {
+                // Once mahalleleri yazdir.
+                Mahalle mahalle1 = mahalle;
+                Console.WriteLine(mahalle1);
+                // Mahallleden sonra o mahallenin teslimatlarini tek tek yazdir.
+                foreach(Teslimat teslimat in mahalle.getTeslimatListesi())
+                {
+                    Console.WriteLine("    " + teslimat);
+                }
+                Console.WriteLine();
+            }
+        }
+
+        /*
          * Dokumandaki 1. sorunun c şıkkındaki işlemi yapan metot.
          */
         public static void mahalleVeTeslimatSayisiniBulupEkranaYazdir(ArrayList motoKuryeListesi)
@@ -88,6 +112,8 @@ namespace Data_Structure_Proje_2
                 Mahalle mahalle = (Mahalle) motoKuryeListesi[i];
                 toplamTeslimatSayisi += mahalle.getTeslimatSayisi();
             }
+
+            Console.WriteLine("\n----------------1.c TOPLAM MAHALLE VE TESLİMAT SAYILARI----------------\n");
 
             // Arraylistin eleman sayisi mahalle sayisina esittir.
             Console.WriteLine("Toplam Mahalle (Liste) sayisi: " + motoKuryeListesi.Count);
@@ -114,6 +140,7 @@ namespace Data_Structure_Proje_2
             /*
              * Her mahalle icin teslimat listelerini gezerek teslimatlarını ekrana yazdir.
              */
+            Console.WriteLine("\n-------------------------------2.a STACK-------------------------------\n\n");
             while (!myStack.isEmpty())
             {
                 Mahalle mahalle = myStack.pop();
@@ -121,11 +148,10 @@ namespace Data_Structure_Proje_2
                 for (int i = 0; i < mahalle.getTeslimatListesi().Count; i++)
                 {
                     Teslimat teslimat = mahalle.getTeslimatListesi()[i];
-                    Console.WriteLine(teslimat);
+                    Console.WriteLine("    " + teslimat);
                 }
-                Console.WriteLine("---------------------------------------------------");
+                Console.WriteLine();
             }
-            Console.WriteLine();
         }
 
         /*
@@ -145,6 +171,7 @@ namespace Data_Structure_Proje_2
             /*
              * Her mahalle icin teslimat listelerini gezerek teslimatlarını ekrana yazdir.
              */
+            Console.WriteLine("\n-------------------------------2.b QUEUE-------------------------------\n\n");
             while (!myQueue.isEmpty())
             {
                 Mahalle mahalle = myQueue.remove();
@@ -152,11 +179,11 @@ namespace Data_Structure_Proje_2
                 for (int i = 0; i < mahalle.getTeslimatListesi().Count; i++)
                 {
                     Teslimat teslimat = mahalle.getTeslimatListesi()[i];
-                    Console.WriteLine(teslimat);
+                    Console.WriteLine("    " + teslimat);
                 }
-                Console.WriteLine("---------------------------------------------------");
+                Console.WriteLine();
             }
-            Console.WriteLine();
+            
         }
 
         /*
@@ -174,12 +201,12 @@ namespace Data_Structure_Proje_2
             }
 
             // Kuyruktan buyukten kucuge dogru elemanları tek tek sil ve Konsola yazdir.
+            Console.WriteLine("\n-------------------------------3.a PRIORITYQUEUE-------------------------------\n\n");
             while (!priorityQueue.isEmpty())
             {
                 Mahalle mahalle = priorityQueue.remove();
                 Console.WriteLine(mahalle);
             }
-            Console.WriteLine();
         }
 
         /*
@@ -199,6 +226,7 @@ namespace Data_Structure_Proje_2
                 myQueue.insert(urun);
             }
 
+            Console.WriteLine("\n-------------------------------4.a INTQUEUE-------------------------------\n\n");
             int count = 0;
             int musterininToplamSuresi = 0;
             int tumMusterilerinToplamSuresi = 0;
@@ -214,7 +242,7 @@ namespace Data_Structure_Proje_2
             }
             // Ortalamayı bul ve ekrana yaz.
             double ortalamaSure = tumMusterilerinToplamSuresi / (double) count;
-            Console.WriteLine(String.Format("Kasanın ortalama işlem tamamlanma süresi: {0}", ortalamaSure));
+            Console.WriteLine(String.Format("\nKasanın ortalama işlem tamamlanma süresi: {0}", ortalamaSure));
             Console.WriteLine();
         }
 
@@ -235,6 +263,7 @@ namespace Data_Structure_Proje_2
                 myPriorityQueue.add(urun);
             }
 
+            Console.WriteLine("\n-------------------------------4.b INTPRIORITYQUEUE-------------------------------\n\n");
             int count = 0;
             int musterininToplamSuresi = 0;
             int tumMusterilerinToplamSuresi = 0;
@@ -250,7 +279,7 @@ namespace Data_Structure_Proje_2
             }
             // Ortalamayı bul ve ekrana yaz.
             double ortalamaSure = tumMusterilerinToplamSuresi / (double)count;
-            Console.WriteLine(String.Format("Kasanın ortalama işlem tamamlanma süresi: {0}", ortalamaSure));
+            Console.WriteLine(String.Format("\nKasanın ortalama işlem tamamlanma süresi: {0}", ortalamaSure));
         }
     }
 }
